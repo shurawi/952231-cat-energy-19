@@ -1,0 +1,52 @@
+@import "variables.scss";
+
+.header__list {
+  list-style: none;
+}
+
+.header__item {
+  padding: 22px 0;
+  height: 66px;
+  text-align: center;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.header__item:last-child {
+  border: none;
+}
+
+.header__item--logo {
+  padding: 22px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__link {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Oswald medium", "Arial", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.header__img {
+  width: 190px;
+  height: 38px;
+}
+
+.header__btn {
+  font-size: 0;
+  margin-left: 65px;
+}
+
+.header__btn--close {
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-close.svg") no-repeat;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
