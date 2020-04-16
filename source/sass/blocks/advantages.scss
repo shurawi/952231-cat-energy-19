@@ -1,0 +1,40 @@
+@import "variables.scss";
+
+.advantages__wrap {
+  padding: 17px 20px 50px;
+}
+
+.advantages__list {
+  padding: 0 0 0 80px;
+}
+
+.advantages__item {
+  position: relative;
+  margin-top: 20px;
+  height: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+  }
+}
+
+.advantages__head {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+.advantages__paragraph {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}

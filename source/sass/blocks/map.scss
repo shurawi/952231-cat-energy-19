@@ -1,0 +1,15 @@
+@import "variables.scss";
+
+.map__wrap {
+  height: 362px;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat;
+  background-position: 0 -40px;
+}
+
+.map__img {
+  position: relative;
+  top: 38%;
+  left: 42%;
+  width: 55px;
+  height: 53px;
+}

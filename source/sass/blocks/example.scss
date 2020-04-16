@@ -1,0 +1,132 @@
+@import "variables.scss";
+
+.example {
+  padding-bottom: 35px;
+  background-color: #f2f2f2;
+}
+
+.example__head {
+  margin-left: 20px;
+  padding-top: 17px;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.example__paragraph {
+  margin: 0 25px 0 20px;
+  padding-top: 23px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+}
+
+.example__borders {
+  margin: 25px 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item {
+  position: relative;
+  width: 124px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+}
+
+.example__title {
+  padding: 13px 0 17px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__span {
+  position: absolute;
+  top: 46px;
+  left: 5%;
+  margin: 0 14px 0 12px;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+.example__paragraph--value {
+  padding: 34px 40px 0 46px;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.example__img {
+  margin-top: 35px;
+}
+
+.example__buttons {
+  margin: 25px 53px 0 57px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__btn {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.example__btn--before {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: -56px;
+    width: 41px;
+    height: 10px;
+    background-color: #ffffff;
+    border: 2px solid #cdcdcd;
+    border-right: none;
+    border-radius: 40px 0 0 40px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -54px;
+    width: 35px;
+    height: 6px;
+    background-color: #68b738;
+    border-radius: 40px;
+  }
+}
+
+.example__btn--after {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -53px;
+    width: 41px;
+    height: 10px;
+    background-color: #ffffff;
+    border: 2px solid #cdcdcd;
+    border-left: none;
+    border-radius: 0 40px 40px 0;
+  }
+}

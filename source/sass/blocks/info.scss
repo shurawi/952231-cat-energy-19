@@ -1,0 +1,69 @@
+@import "variables.scss";
+
+.info__list {
+  padding-top: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info__item {
+  margin: 30px 20px 0;
+  padding-bottom: 26px;
+  width: 87%;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.info__item--academy {
+  margin: 9px 0 0;
+  padding: 0;
+  width: 91%;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+.info__img {
+  width: 128px;
+  height: 24px;
+}
+
+.social {
+  margin: 21px 0 0;
+  padding-bottom: 17px;
+}
+
+.social__list {
+  margin: 0 82px 0 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__svg--vk {
+  width: 22px;
+  height: 12px;
+}
+
+.social__svg--inst {
+  width: 16px;
+  height: 16px;
+}
+
+.social__svg--fb {
+  width: 10px;
+  height: 19px;
+}
+
+.info__span {
+  margin: 0;
+  padding: 21px 0 0 4px;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+}
+
+.info__svg--academy {
+  width: 40px;
+  height: 60px;
+}
