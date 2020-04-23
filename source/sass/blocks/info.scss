@@ -1,27 +1,55 @@
 @import "variables.scss";
 
+.info {
+  background-color: #f2f2f2;
+}
+
 .info__list {
-  padding-top: 7px;
+  padding: 9px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 30px 57px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 110px 55px;
+  }
 }
 
 .info__item {
-  margin: 30px 20px 0;
+  margin: 30px 0 0;
   padding-bottom: 26px;
-  width: 87%;
+  width: 100%;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    width: 32%;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    border: none;
+  }
 }
 
 .info__item--academy {
-  margin: 9px 0 0;
+  margin: 0;
   padding: 0;
-  width: 91%;
   display: flex;
   justify-content: space-between;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 32%;
+    margin: -3px 0 0;
+    padding-left: 63px;
+    justify-content: flex-end;
+  }
 }
 
 .info__img {
@@ -32,38 +60,99 @@
 .social {
   margin: 21px 0 0;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .social__list {
   margin: 0 82px 0 72px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.social__item {
+  @media (min-width: $tablet-width) {
+    margin: 0 21px 0 7px;
+  }
+}
+
+.social__link--vk {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+}
+
+.social__link--inst {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 2px;
+    display: inline-block;
+  }
+}
+
+.info__link--academy {
+  padding-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .social__svg--vk {
   width: 22px;
   height: 12px;
+  margin-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 16px;
+    margin: 0;
+  }
 }
 
 .social__svg--inst {
   width: 16px;
   height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 .social__svg--fb {
   width: 10px;
   height: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 14px;
+    height: 28px;
+  }
 }
 
 .info__span {
   margin: 0;
-  padding: 21px 0 0 4px;
+  padding: 30px 0 0;
   font-size: 16px;
   line-height: 16px;
   font-family: "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+    padding: 0;
+    align-self: center;
+  }
 }
 
 .info__svg--academy {
-  width: 40px;
-  height: 60px;
+  fill: #666666;
 }

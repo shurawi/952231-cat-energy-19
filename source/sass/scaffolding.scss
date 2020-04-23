@@ -54,7 +54,7 @@ img {
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 1440px;
     margin: 0 auto;
   }
 }
@@ -86,4 +86,10 @@ img {
   background-color: #68b738;
   border: none;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
