@@ -1,0 +1,72 @@
+@import "variables.scss";
+
+.goods__wrap {
+  padding-bottom: 34px;
+}
+
+.goods__head{
+  margin: 28px 0 34px 20px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.goods__list {
+  margin: 0 20px;
+}
+
+.goods__item {
+  border-top: 1px solid #cdcdcd;
+}
+
+.goods__item:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.goods__title {
+  margin-top: 13px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.goods__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods__paragraph {
+  margin: 14px 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arials", sans-serif;
+}
+
+.goods__btn {
+  width: 100%;
+  margin-bottom: 17px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.goods__gift {
+  width: 280px;
+  height: 289px;
+  margin: 40px 20px 0;
+  background: url("../img/gift-photo-mobile@1x.jpg");
+}
+
+.googs__svg {
+  width: 55px;
+  height: 60px;
+  margin: 64px 0 57px 113px;
+  fill: #ffffff;
+}
+
+.goods__paragraph--gift {
+  margin: 0 55px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
