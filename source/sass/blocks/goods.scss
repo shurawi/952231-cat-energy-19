@@ -2,25 +2,78 @@
 
 .goods__wrap {
   padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 76px;
+  }
 }
 
 .goods__head{
+  position: relative;
   margin: 28px 0 34px 20px;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 0;
+    width: 53px;
+    height: 3px;
+    background-color: #68b738;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 67px 0 80px 67px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: -68px;
+      width: 28px;
+      height: 3px;
+      background-color: #68b738;
+    }
+
+    &::after {
+      top: 22px;
+      width: 326px;
+    }
+  }
 }
 
 .goods__list {
   margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
 }
 
 .goods__item {
   border-top: 1px solid #cdcdcd;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 35px 11px 37px;
+  }
 }
 
 .goods__item:last-child {
   border-bottom: 1px solid #cdcdcd;
+}
+
+.goods__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .goods__title {
@@ -28,11 +81,21 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    flex-grow: 5;
+  }
 }
 
 .goods__text {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .goods__paragraph {
@@ -40,6 +103,30 @@
   font-size: 14px;
   line-height: 14px;
   font-family: "Arials", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    margin: 17px 1px 11px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.goods__paragraph--water {
+  @media (min-width: $tablet-width) {
+    margin: 17px 2px 11px -15px;
+  }
+}
+
+.goods__paragraph--milk {
+  @media (min-width: $tablet-width) {
+    margin: 17px 2px 11px -45px;
+  }
+}
+
+.goods__paragraph__vitamins {
+  @media (min-width: $tablet-width) {
+    margin: 17px 2px 11px -20px;
+  }
 }
 
 .goods__btn {
@@ -47,6 +134,11 @@
   margin-bottom: 17px;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    margin-top: 10px;
+  }
 }
 
 .goods__gift {
@@ -54,6 +146,22 @@
   height: 289px;
   margin: 40px 20px 0;
   background: url("../img/gift-photo-mobile@1x.jpg");
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 200px;
+    margin: 69px 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: url("../img/gift-photo-tablet@1x.jpg");
+  }
+}
+
+.goods__pic {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .googs__svg {
@@ -61,6 +169,16 @@
   height: 60px;
   margin: 64px 0 57px 113px;
   fill: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 90px;
+  }
+}
+
+.goods__word {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .goods__paragraph--gift {
@@ -69,4 +187,9 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    margin: 72px 92px 0 69px;
+    text-align: left;
+  }
 }
