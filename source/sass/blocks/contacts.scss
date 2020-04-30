@@ -1,5 +1,13 @@
 @import "variables.scss";
 
+.contacts--catalog {
+  background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+  }
+}
+
 .contacts__wrap {
   padding: 28px 19px;
   display: flex;

@@ -1,0 +1,253 @@
+@import "variables.scss";
+
+.catalog__wrap {
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin-top: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin-top: 71px;
+  }
+}
+
+.catalog__head {
+  margin: 0 20px 27px;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 25px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 70px 0 110px;
+  }
+}
+
+.catalog__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 22px 70px 0;
+  }
+}
+
+.catalog__item {
+  margin: 0 0 24px;
+  padding: 0 20px 0;
+  border-top: 1px solid #ededed;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin: 140px 30px 0;
+    padding: 0 0 40px;
+    background-color: #f2f2f2;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 143px 40px 0;
+  }
+}
+
+.catalog__item--add {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ededed;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    border: 1px solid #f2f2f2;
+  }
+}
+
+.catalog__container {
+  display: flex;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin: 0 37px 0 38px;
+    flex-direction: column;
+  }
+}
+
+.catalog__container--add {
+  flex-direction: column;
+}
+
+.catalog__pic {
+  width: 50%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: -39px;
+    bottom: 201px;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.catalog__pic--add {
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+}
+
+.catalog__frame {
+  display: flex;
+}
+
+.catalog__svg {
+  width: 30px;
+  height: 30px;
+  margin: 26px 0 0 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin: 55px 0 0 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 54px;
+  }
+}
+
+.catalog__text {
+  width: 50%;
+  margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: 164px;
+  }
+}
+
+.catalog__text--add {
+  width: 100%;
+  margin: 18px 0 21px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
+  }
+}
+
+.catalog__title {
+  padding-right: 66px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 53px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 18px;
+  }
+}
+
+.catalog__title--add {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 1px 14px;
+  }
+}
+
+.catalog__sked {
+  margin-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 27px;
+  }
+}
+
+.catalog__row {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.catalog__paragraph {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.catalog__paragraph--add {
+  padding-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 0 0;
+  }
+}
+
+.catalog__img--add {
+  width: 30px;
+  height: 30px;
+}
+
+.catalog__btn {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+    height: 40px;
+    margin-top: 24px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+}
+
+.catalog__btn--add {
+  color: #000000;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+  }
+}

@@ -3,7 +3,7 @@
 .promo {
   @media (min-width: $desktop-width) {
     margin-top: -117px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(104, 183, 56, 0.6) 50%, rgba(104, 183, 56, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(104, 183, 56, 0.6) 50%, rgba(99, 167, 58, 1) 100%);
   }
 }
 
@@ -101,12 +101,15 @@
 .promo__button {
   width: 282px;
   margin-top: 12px;
+  padding-top: 11px;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 270px;
     left: 118px;
     width: 246px;
+    padding-top: 15px;
   }
 
   @media (min-width: $desktop-width) {

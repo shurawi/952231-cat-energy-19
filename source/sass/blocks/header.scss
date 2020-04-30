@@ -44,6 +44,10 @@
   }
 }
 
+/*.header__item:not(.header__item--logo) {
+  display: none;
+}*/
+
 .header__item--logo {
   padding: 22px 20px;
   display: flex;
@@ -77,6 +81,12 @@
   }
 }
 
+.header__link--black {
+  @media (min-width: $desktop-width) {
+    color: #000000;
+  }
+}
+
 .header__link--active {
   @media (min-width: $tablet-width) {
     padding-bottom: 6px;
@@ -85,6 +95,12 @@
 
   @media (min-width: $desktop-width) {
     border-color: #ffffff;
+  }
+}
+
+.header__item--black .header__link--black {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #68b738;
   }
 }
 
