@@ -6,9 +6,13 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 76px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 86px;
+  }
 }
 
-.goods__head{
+.goods__head {
   position: relative;
   margin: 28px 0 34px 20px;
   font-size: 24px;
@@ -45,6 +49,27 @@
       width: 326px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 75px 0 80px 109px;
+
+    &::before {
+      width: 70px;
+      left: -110px;
+    }
+
+    &::after {
+      width: 958px;
+    }
+  }
+}
+
+.goods__cover {
+  @media (min-width: $desktop-width) {
+    margin: 0 70px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .goods__list {
@@ -52,6 +77,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 40px;
   }
 }
 
@@ -61,7 +90,14 @@
   border-right: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
-    padding: 12px 35px 11px 37px;
+    padding: 12px 0 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 4px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -72,7 +108,6 @@
 .goods__container {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -83,9 +118,17 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    width: 324px;
+    margin-right: 30px;
+    padding-left: 37px;
     font-size: 20px;
     line-height: 20px;
-    flex-grow: 5;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    margin-right: 40px;
+    padding: 0;
   }
 }
 
@@ -94,7 +137,17 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    flex-grow: 1;
+    width: 324px;
+    margin-left: 30px;
+    padding-right: 35px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    padding: 0;
+    margin-left: 40px;
+    justify-content: space-between;
   }
 }
 
@@ -105,27 +158,30 @@
   font-family: "Arials", sans-serif;
 
   @media (min-width: $tablet-width) {
-    margin: 17px 1px 11px;
+    margin: 17px 0 11px;
     font-size: 16px;
     line-height: 20px;
   }
 }
 
+.goods__paragraph--coast {
+  @media (min-width: $tablet-width) {
+    margin-left: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 17px 0 14px;
+  }
+}
+
 .goods__paragraph--water {
   @media (min-width: $tablet-width) {
-    margin: 17px 2px 11px -15px;
+    margin-left: 61px;
   }
-}
 
-.goods__paragraph--milk {
-  @media (min-width: $tablet-width) {
-    margin: 17px 2px 11px -45px;
-  }
-}
-
-.goods__paragraph__vitamins {
-  @media (min-width: $tablet-width) {
-    margin: 17px 2px 11px -20px;
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 8px;
   }
 }
 
@@ -136,8 +192,14 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    width: 632px;
     height: 40px;
     margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-left: 40px;
   }
 }
 
@@ -156,11 +218,24 @@
     align-items: flex-start;
     background: url("../img/gift-photo-tablet@1x.jpg");
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 288px;
+    margin: 0 40px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+  }
 }
 
 .goods__pic {
   @media (min-width: $tablet-width) {
     width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -173,11 +248,19 @@
   @media (min-width: $tablet-width) {
     margin-left: 90px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 64px 0 0 94px;
+  }
 }
 
 .goods__word {
   @media (min-width: $tablet-width) {
     width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -191,5 +274,10 @@
   @media (min-width: $tablet-width) {
     margin: 72px 92px 0 69px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 58px 37px 0 35px;
+    text-align: center;
   }
 }
