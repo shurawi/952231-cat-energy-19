@@ -1,0 +1,305 @@
+@import "variables.scss";
+
+.application__wrap {
+  padding-bottom: 30px;
+}
+
+.application__head {
+  margin-top: 14px;
+  padding: 0 20px;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.application__paragraph {
+  margin: 25px 25px 0 0;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.application__fild {
+  margin: 0;
+  padding: 0 20px;
+  border: none;
+}
+
+.application__fild--name {
+  margin-top: 38px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ededed;
+}
+
+.application__fild--radio {
+  margin-top: 27px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ededed;
+}
+
+.application__title {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.application__title--contacts {
+  padding: 27px 90px 34px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 201px;
+    width: 99px;
+    height: 3px;
+    background-color: #68b738;
+  }
+}
+
+.application__title--textarea {
+  padding: 15px 0 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 142px;
+    width: 158px;
+    height: 3px;
+    background-color: #68b738;
+  }
+}
+
+.application__title--check {
+  padding: 23px 0 41px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 37px;
+    left: 165px;
+    width: 135px;
+    height: 3px;
+    background-color: #68b738;
+  }
+}
+
+.application__item {
+  display: flex;
+}
+
+.application__item--text {
+  margin-bottom: 14px;
+}
+
+.application__item--radio {
+  margin-bottom: 24px;
+  padding-left: 46px;
+}
+
+.application__item--contacts {
+  margin-bottom: 14px;
+}
+
+.application__item--check {
+  margin-bottom: 24px;
+  padding-left: 46px;
+}
+
+.application__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.application__label--text {
+  align-self: center;
+}
+
+.application__label--radio {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -46px;
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #cecece;
+    cursor: pointer;
+  }
+}
+
+.application__label--check {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -47px;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cfcfcf;
+  }
+}
+
+.application__input--text {
+  width: 150px;
+  margin-left: 15px;
+  padding: 14px 14px 11px;
+  flex-grow: 2;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #e6e6e6;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: 1px solid #ff8282;
+  }
+
+  &:focus {
+    border: 1px solid #000000;
+  }
+}
+
+.application__input::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.application__input--radio,
+.application__input--check {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.application__input--contacts {
+  margin-left: 11px;
+}
+
+.application__input--mail {
+  background: url("../img/icon-mail.svg") no-repeat;
+  background-size: 17px 18px;
+  background-position: 93% 53%;
+
+  &:invalid:not(:placeholder-shown) {
+    background: url("../img/icon-mail-error.svg") no-repeat;
+    background-size: 17px 18px;
+    background-position: 93% 53%;
+  }
+
+  &:focus,
+  &:active {
+    background: url("../img/icon-mail-focus.svg") no-repeat;
+    background-size: 17px 18px;
+    background-position: 93% 53%;
+  }
+}
+
+.application__input--phone {
+  background: url("../img/icon-phone.svg") no-repeat;
+  background-size: 20px 20px;
+  background-position: 94% 56%;
+
+  &:invalid:not(:placeholder-shown) {
+    background: url("../img/icon-phone-error.svg") no-repeat;
+    background-size: 17px 18px;
+    background-position: 93% 53%;
+  }
+
+  &:focus,
+  &:active {
+    background: url("../img/icon-phone-focus.svg") no-repeat;
+    background-size: 17px 18px;
+    background-position: 93% 53%;
+  }
+}
+
+.application__textarea {
+  width: 280px;
+  height: 150px;
+  padding: 13px 10px 0 13px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #444444;
+  border: 1px solid #e6e6e6;
+  resize: none;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Oswald", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #444444;
+  }
+}
+
+.application__btn {
+  width: 280px;
+  margin: 17px 20px 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.application__span {
+  margin: 21px 0 0 82px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arials", sans-serif;
+}
+
+.application__input--radio:checked ~ .application__label--radio {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -37px;
+    width: 12px;
+    height: 12px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+}
+
+.application__input--radio:not(:disabled):not(:checked) ~ .application__label--radio:hover {
+  &::before {
+    border: 1px solid #bababa;
+  }
+}
+
+.application__input--check:checked ~ .application__label--check {
+  &::before {
+    background: url("../img/icon-tick.svg") no-repeat;
+    background-size: 80%;
+    background-position: 4px 5px;
+  }
+}
+
+.application__input--check:focus ~ .application__label--check {
+  opacity: 0.3;
+}
+
+.application__input--check:not(:disabled):hover ~ .application__label--check {
+  opacity: 1;
+
+  &::before {
+    border: 1px solid #bababa;
+  }
+}

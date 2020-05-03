@@ -152,6 +152,8 @@
 }
 
 .categorys__link {
+  position: relative;
+  width: 170px;
   margin: 19px 0 0;
   padding-bottom: 21px;
   display: block;
@@ -160,6 +162,25 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 24px;
+    height: 11px;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  }
+
+  &:hover::after {
+    width: 33px;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+  }
+
+  &:focus::after {
+    width: 33px;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 56px 0 0;
@@ -170,6 +191,30 @@
 
   @media (min-width: $desktop-width) {
     margin: 31px 0 0;
+  }
+}
+
+.categorys__link--slim {
+  &::after {
+    left: 97px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 129px;
+    }
+  }
+}
+
+.categorys__link--pro {
+  &::after {
+    left: 93px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 124px;
+    }
   }
 }
 

@@ -13,137 +13,155 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <div class="nav__wrap">
-          <ul class="nav__list">
-            <li class="nav__list">
-              <a class="nav__link nav__link--img" href="index.html">
-                <img src="" width="" height="" alt="логотип Кэт Энерджи в виде котенка">
-                <img src="" width="" height="" alt="логотип надпись Кэт Энерджи">
-              </a>
-              <button class="nav__btn" type="button" name="button">открыть</button>
-            </li>
-            <li class="nav__list">
-              <a class="nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="nav__list">
-              <a class="nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="nav__list">
-              <a class="nav__link">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="header__nav wrap">
+        <ul class="header__list">
+          <li class="header__item header__item--logo">
+            <a class="header__link header__link--logo" href="index.html">
+              <picture>
+                <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
+                <source srcset="img/logo-tablet.svg" media="(min-width: 767px)">
+                <img class="header__img" src="img/logo-mobile.svg" alt="логотип Кэт Энерджи">
+              </picture>
+            </a>
+            <button class="header__btn header__btn--close" type="button" name="button">закрыть</button>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="index.html">Главная</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link header__link--active" href="">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
       <section class="application">
-        <form class="application__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="application__form application__form--name">
-            <legend class="application__head">Заполните анкету и мы подберем программу питания для вашего кота</legend>
-            <div class="application__item">
-              <label class="application__label" for="name">Имя:<sup>*</sup></label>
-              <input class="application__input" type="text" name="name" id="name" placeholder="Барсик">
-            </div>
-            <div class="application__item">
-              <label class="application__label" for="weigth">Вес (кг):<sup>*</sup></label>
-              <input class="application__input" type="text" name="weigth" id="weigth" placeholder="7">
-            </div>
-            <div class="application__item">
-              <label class="application__label" for="age">Возраст (лет):</label>
-              <input class="application__input" type="text" name="age" id="age" placeholder="7">
-            </div>
-          </fieldset>
-          <fieldset class="application__form application__form--radio">
-            <div class="application__item application__item--radio">
-              <input class="application__input application__input--radio" type="radio" name="loss" id="loss">
-              <label class="application__label application__label--radio" for="loss">Похудение</label>
-            </div>
-            <div class="application__item application__item--radio">
-              <input class="application__input application__input--radio" type="radio" name="gain" id="gain">
-              <label class="application__label application__label--radio" for="gain">Набор массы</label>
-            </div>
-            <div class="application__item application__item--radio">
-              <input class="application__input application__input--radio" type="radio" name="dontknow" id="dontknow">
-              <label class="application__label application__label--radio" for="dontknow">Не знаю (Нужен ваш совет)</label>
-            </div>
-          </fieldset>
-          <fieldset class="application__form application__form--feedback">
-            <legend class="application__head">Контактные данные (владельца кота)</legend>
-            <div class="application__item">
-              <label class="application__label application__label--feedback" for="email">E-mail:<sup>*</sup></label>
-              <input class="application__input application__input--feedback" type="email" name="" id="email" placeholder="kuklachev@gmail.com">
-            </div>
-            <div class="application__item">
-              <label class="application__label application__label--feedback" for="tel">Телефон:<sup>*</sup></label>
-              <input class="application__input application__input--feedback" type="tel" name="" id="tel" placeholder="8 (960) 900-60-90">
-            </div>
-          </fieldset>
-          <fieldset class="application__form application__form--textarea">
-            <legend class="application__head">Комментарий</legend>
-            <textarea class="application__textarea" name="textarea" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
-          <fieldset class="application__form application__form--check">
-            <legend class="application__head">Дополнительно</legend>
-            <div class="application__item application__item--check">
-              <input class="application__input application__input--check" type="checkbox" name="sweetener" id="sweetener">
-              <label class="application__label application__label--check" for="sweetener">Сахарозаменитель</label>
-            </div>
-            <div class="application__item application__item--check">
-              <input class="application__input application__input--check" type="checkbox" name="water" id="water">
-              <label class="application__label application__label--check" for="water">Питьевая вода</label>
-            </div>
-            <div class="application__item application__item--check">
-              <input class="application__input application__input--check" type="checkbox" name="milk" id="milk">
-              <label class="application__label application__label--check" for="milk">Молоко</label>
-            </div>
-            <div class="application__item application__item--check">
-              <input class="application__input application__input--check" type="checkbox" name="vitamins" id="vitamins">
-              <label class="application__label application__label--check" for="vitamins">Витамины</label>
-            </div>
-          </fieldset>
-          <button class="application__btn btn" type="submit" name="application">Отправить заявку</button>
-          <span class="application__span"><sup>*</sup> — Обязательные поля</span>
-        </form>
+        <div class="application__wrap wrap">
+          <h2 class="application__head">Подбор программы</h2>
+          <p class="application__paragraph">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <form class="application__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="application__fild application__fild--name">
+              <div class="application__item application__item--text">
+                <label class="application__label application__label--text" for="name">Имя:*</label>
+                <input class="application__input application__input--text" type="text" name="application" id="name" placeholder="Барсик" required pattern="^[А-Яа-яЁё\s]+$" title="содержит только символы кирилицы">
+              </div>
+              <div class="application__item application__item--text">
+                <label class="application__label application__label--text" for="weigth">Вес (кг):*</label>
+                <input class="application__input application__input--text" type="text" name="application" id="weigth" placeholder="7" required pattern="^[ 0-9]+$" title="содержит только цифры">
+              </div>
+              <div class="application__item application__item--text">
+                <label class="application__label application__label--text" for="age">Возраст (лет):</label>
+                <input class="application__input application__input--text" type="text" name="application" id="age" placeholder="7" pattern="^[ 0-9]+$" title="содержит только цифры">
+              </div>
+            </fieldset>
+            <fieldset class="application__fild application__fild--radio">
+              <div class="application__item application__item--radio">
+                <input class="application__input application__input--radio" type="radio" name="application" id="loss" checked>
+                <label class="application__label application__label--radio" for="loss">Похудение</label>
+              </div>
+              <div class="application__item application__item--radio">
+                <input class="application__input application__input--radio" type="radio" name="application" id="gain">
+                <label class="application__label application__label--radio" for="gain">Набор массы</label>
+              </div>
+              <div class="application__item application__item--radio">
+                <input class="application__input application__input--radio" type="radio" name="application" id="dontknow">
+                <label class="application__label application__label--radio" for="dontknow">Не знаю (Нужен ваш совет)</label>
+              </div>
+            </fieldset>
+            <fieldset class="application__fild application__fild--contacts">
+              <legend class="application__title application__title--contacts">Контактные данные (владельца кота)</legend>
+              <div class="application__item application__item--contacts">
+                <label class="application__label application__label--text application__label--contacts" for="email">E-mail:*</label>
+                <input class="application__input application__input--text application__input--contacts application__input--mail" type="email" name="application" id="email" placeholder="kuklachev@gmail.com" required>
+              </div>
+              <div class="application__item application__item--text">
+                <label class="application__label application__label--text application__label--contacts" for="tel">Телефон:*</label>
+                <input class="application__input application__input--text application__input--contacts application__input--phone" type="tel" name="application" id="tel" placeholder="8 (960) 900-60-90" required pattern="8\s?[\(]9[0-9]{2}[\)]\s?[0-9]{3}-[0-9]{2}-[0-9]{2}" title="формат 8 (960) 900-60-90">
+              </div>
+            </fieldset>
+            <fieldset class="application__fild application__fild--textarea">
+              <legend class="application__title application__title--textarea">Комментарий</legend>
+              <textarea class="application__textarea" name="textarea" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </fieldset>
+            <fieldset class="application__fild application__fild--check">
+              <legend class="application__title application__title--check">Дополнительно</legend>
+              <div class="application__item application__item--check">
+                <input class="application__input application__input--check" type="checkbox" name="application" id="sweetener">
+                <label class="application__label application__label--check" for="sweetener">Сахарозаменитель</label>
+              </div>
+              <div class="application__item application__item--check">
+                <input class="application__input application__input--check" type="checkbox" name="application" id="water">
+                <label class="application__label application__label--check" for="water">Питьевая вода</label>
+              </div>
+              <div class="application__item application__item--check">
+                <input class="application__input application__input--check" type="checkbox" name="application" id="milk">
+                <label class="application__label application__label--check" for="milk">Молоко</label>
+              </div>
+              <div class="application__item application__item--check">
+                <input class="application__input application__input--check" type="checkbox" name="application" id="vitamins">
+                <label class="application__label application__label--check" for="vitamins">Витамины</label>
+              </div>
+            </fieldset>
+            <button class="application__btn btn" type="submit" name="application">Отправить заявку</button>
+            <span class="application__span">* — Обязательные поля</span>
+          </form>
+        </div>
       </section>
-      <section class="contacts">
-        <div class="contacts__wrap">
-          <h2 class="contacts__head">приглашаем  к сотрудничеству  дилеров!</h2>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</address>
+      <section class="contacts contacts--catalog">
+        <div class="contacts__wrap wrap">
+          <h2 class="contacts__head">приглашаем<br> к сотрудничеству  дилеров!</h2>
+          <div class="contacts__address">
+            <p class="content__paragraph">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="content__paragraph">Санкт-Петербург</p>
+          </div>
         </div>
       </section>
       <section class="map">
-        <img src="" width="" height="" alt="наше местоположение на картеб ул. Большая Конюшенная, д. 19/8  Санкт-Петербург">
+        <h2 class="visually-hidden">Наш положение на карте: ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</h2>
+        <div class="map__wrap wrap">
+          <img class="map__img" src="img/map-pin.png" width="55" height="53" alt="маркер на карте">
+        </div>
       </section>
     </main>
     <footer>
       <section class="info">
-        <ul class="info__list">
-          <li class="info__item">
-            <a class="info__link" href="index.html">
-              <img src="" width="" height="" alt="логотип надпись Кэт Энерджи">
-            </a>
-          </li>
-          <li class="info__item">
-            <ul class="info__list info__list--social">
-              <li class="info__item">
-                <a class="info__link info__link--social info__link--vk" href="#">vk</a>
-              </li>
-              <li class="info__item">
-                <a class="info__link info__link--social info__link--inst" href="#">inst</a>
-              </li>
-              <li class="info__item">
-                <a class="info__link info__link--social info__link--fb" href="#">fb</a>
-              </li>
-            </ul>
-          </li>
-          <li class="info__item">
-            <p class="info__span"></p>
-            <a class="info__link info__link--academy" href="#">
-              <img src="" width="" height="" alt="логотип HTML академии">
-            </a>
-          </li>
-        </ul>
+        <div class="info__wrap wrap">
+          <ul class="info__list">
+            <li class="info__item info__item--logo">
+              <a class="info__link" href="index.html">
+                <img class="info__img" src="img/logo-footer.svg" width="128" height="24" alt="логотип: надпись Кэт Энерджи">
+              </a>
+            </li>
+            <li class="info__item info__item--social social">
+              <ul class="social__list">
+                <li class="social__item social__item--vk">
+                  <a class="social__link social__link--vk" href="#">
+                    <svg class="social__svg social__svg--vk" width="22" height="12"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--inst" href="#">
+                    <svg class="social__svg social__svg--inst" width="16" height="16"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--fb" href="#">
+                    <svg class="social__svg social__svg--fb" width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="info__item info__item--academy">
+              <p class="info__span">HTML Academy</p>
+              <a class="info__link info__link--academy" href="https://htmlacademy.ru/intensive/adaptive">
+                <svg class="info__svg info__svg--academy" width="27" height="34"><use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </footer>
   </body>

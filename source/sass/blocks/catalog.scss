@@ -244,8 +244,17 @@
 }
 
 .catalog__btn--add {
-  color: #000000;
+  color: #444444;
   background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:focus {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: #ebebeb;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 64px;
