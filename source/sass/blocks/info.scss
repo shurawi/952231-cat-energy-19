@@ -156,3 +156,27 @@
 .info__svg--academy {
   fill: #666666;
 }
+
+.info__link--logo:hover {
+  opacity: 0.8;
+}
+
+.info__link--logo:focus {
+  opacity: 0.6;
+}
+
+.social__link:hover .social__svg {
+  fill: #68b738;
+}
+
+.social__link:focus .social__svg {
+  fill: rgba(104, 183, 56, 0.3);
+}
+
+.info__link--academy:hover .info__svg--academy {
+  fill: #68b738;
+}
+
+.info__link--academy:focus .info__svg--academy {
+  fill: rgba(104, 183, 56, 0.3);
+}

@@ -1,14 +1,23 @@
 @import "scaffolding.scss";
 @import "variables.scss";
-/*index.html*/
+
+/*header*/
 @import "blocks/header.scss";
+
+/*index.html*/
 @import "blocks/promo.scss";
 @import "blocks/categorys.scss";
 @import "blocks/advantages.scss";
 @import "blocks/example.scss";
 @import "blocks/contacts.scss";
 @import "blocks/map.scss";
-@import "blocks/info.scss";
-/*products.html*/
+
+/*catalog.html*/
 @import "blocks/catalog.scss";
-@import "blocks/goods.scss"
+@import "blocks/goods.scss";
+
+/*form.html*/
+@import "blocks/application.scss";
+
+/*footer*/
+@import "blocks/info.scss"

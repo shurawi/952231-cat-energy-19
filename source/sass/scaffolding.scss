@@ -87,6 +87,15 @@ img {
   border: none;
   outline: none;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f;
+  }
+
   @media (min-width: $tablet-width) {
     height: 52px;
     font-size: 20px;

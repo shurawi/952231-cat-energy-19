@@ -67,6 +67,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -77,13 +78,16 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 25px;
-    color: #ffffff;
   }
 }
 
-.header__link--black {
-  @media (min-width: $desktop-width) {
-    color: #000000;
+.header__link--logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
   }
 }
 
@@ -92,15 +96,36 @@
     padding-bottom: 6px;
     border-bottom: 2px solid #68b738;
   }
+}
 
+.header__link--white {
   @media (min-width: $desktop-width) {
-    border-color: #ffffff;
+    color: #ffffff;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.3;
+    }
   }
 }
 
-.header__item--black .header__link--black {
+.header__item--white .header__link--active {
   @media (min-width: $desktop-width) {
-    border-bottom: 2px solid #68b738;
+    border-bottom: 2px solid #ffffff;
+    opacity: 1;
+  }
+}
+
+.header__link:not(.header__link--active) {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
   }
 }
 
