@@ -2,6 +2,10 @@
 
 .application__wrap {
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
 }
 
 .application__head {
@@ -10,6 +14,13 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 53px;
+    padding: 0 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .application__paragraph {
@@ -18,30 +29,64 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 55px 354px 0 30px;
+    padding: 0 20px 0 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .application__fild {
   margin: 0;
   padding: 0 20px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 66px 0 69px;
+  }
 }
 
 .application__fild--name {
   margin-top: 38px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ededed;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    padding: 0 66px 0 70px;
+    border: none;
+  }
 }
 
 .application__fild--radio {
   margin-top: 27px;
   padding-bottom: 3px;
   border-bottom: 1px solid #ededed;
+
+  @media (min-width: $tablet-width) {
+    margin: 52px 66px 0 69px;
+    padding: 32px 0 0 88px;
+    border: 1px solid #ededed;
+  }
+}
+
+.application__fild--textarea {
+  @media (min-width: $tablet-width) {
+    padding: 0 66px 0 68px;
+  }
 }
 
 .application__title {
   position: relative;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .application__title--contacts {
@@ -55,6 +100,26 @@
     width: 99px;
     height: 3px;
     background-color: #68b738;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 76px 90px 75px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 98px;
+      left: -71px;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+    }
+
+    &::after {
+      top: 98px;
+      left: 552px;
+      width: 145px;
+    }
   }
 }
 
@@ -70,6 +135,26 @@
     height: 3px;
     background-color: #68b738;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 46px 0 75px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 68px;
+      left: -69px;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+    }
+
+    &::after {
+      top: 68px;
+      left: 220px;
+      width: 479px;
+    }
+  }
 }
 
 .application__title--check {
@@ -84,6 +169,33 @@
     height: 3px;
     background-color: #68b738;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 0 66px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 83px;
+      left: -69px;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+    }
+
+    &::after {
+      top: 83px;
+      left: 252px;
+      width: 445px;
+    }
+  }
+}
+
+.application__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .application__item {
@@ -92,26 +204,56 @@
 
 .application__item--text {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .application__item--radio {
   margin-bottom: 24px;
   padding-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+    padding: 0;
+  }
 }
 
 .application__item--contacts {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .application__item--check {
   margin-bottom: 24px;
   padding-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+    margin-bottom: 53px;
+    padding-left: 58px;
+  }
+}
+
+.application__item--check:nth-child(2n) {
+  @media (min-width: $tablet-width) {
+    margin-left: 74px;
+  }
 }
 
 .application__label {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .application__label--text {
@@ -133,6 +275,14 @@
     border: 1px solid #cecece;
     cursor: pointer;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: -60px;
+      width: 38px;
+      height: 38px;
+    }
+  }
 }
 
 .application__label--check {
@@ -146,6 +296,15 @@
     width: 28px;
     height: 28px;
     border: 1px solid #cfcfcf;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: -10px;
+      left: -58px;
+      width: 38px;
+      height: 38px;
+    }
   }
 }
 
@@ -171,6 +330,13 @@
   &:focus {
     border: 1px solid #000000;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 18px;
+    padding: 10px 18px 10px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .application__input::placeholder {
@@ -178,6 +344,11 @@
   line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .application__input--radio,
@@ -193,20 +364,35 @@
 
 .application__input--mail {
   background: url("../img/icon-mail.svg") no-repeat;
-  background-size: 17px 18px;
+  background-size: 17px 13px;
   background-position: 93% 53%;
 
   &:invalid:not(:placeholder-shown) {
     background: url("../img/icon-mail-error.svg") no-repeat;
-    background-size: 17px 18px;
+    background-size: 17px 13px;
     background-position: 93% 53%;
   }
 
   &:focus,
   &:active {
     background: url("../img/icon-mail-focus.svg") no-repeat;
-    background-size: 17px 18px;
+    background-size: 17px 13px;
     background-position: 93% 53%;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-position: 96% 53%;
+
+    &:invalid:not(:placeholder-shown) {
+      background-position: 96% 53%;
+    }
+
+    &:focus,
+    &:active {
+      background-position: 96% 53%;
+    }
   }
 }
 
@@ -226,6 +412,21 @@
     background: url("../img/icon-phone-focus.svg") no-repeat;
     background-size: 17px 18px;
     background-position: 93% 53%;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 14px;
+    padding: 10px 20px;
+    background-position: 97% 53%;
+
+    &:invalid:not(:placeholder-shown) {
+      background-position: 97% 53%;
+    }
+
+    &:focus,
+    &:active {
+      background-position: 97% 53%;
+    }
   }
 }
 
@@ -248,6 +449,27 @@
     text-transform: uppercase;
     color: #444444;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    height: 174px;
+    padding: 10px 10px 0 20px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.application__footer {
+  @media (min-width: $tablet-width) {
+    margin: 0 168px 0 71px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .application__btn {
@@ -255,6 +477,12 @@
   margin: 17px 20px 0;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 283px;
+    margin: 12px 0 0;
+    font-size: 20px;
+  }
 }
 
 .application__span {
@@ -263,6 +491,12 @@
   font-size: 14px;
   line-height: 16px;
   font-family: "Arials", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    margin: 5px 5px 0 0;
+    align-self: center;
+    font-size: 16px;
+  }
 }
 
 .application__input--radio:checked ~ .application__label--radio {
@@ -275,6 +509,15 @@
     height: 12px;
     background-color: #68b738;
     border-radius: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 3px;
+      left: -49px;
+      width: 18px;
+      height: 18px;
+    }
   }
 }
 
@@ -289,6 +532,13 @@
     background: url("../img/icon-tick.svg") no-repeat;
     background-size: 80%;
     background-position: 4px 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      background-size: 62%;
+      background-position: 8px 11px;
+    }
   }
 }
 
