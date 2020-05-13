@@ -86,11 +86,11 @@
 
 .goods__item {
   border-top: 1px solid #cdcdcd;
-  border-left: 1px solid #cdcdcd;
-  border-right: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     padding: 12px 0 11px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
