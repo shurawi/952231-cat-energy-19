@@ -44,9 +44,9 @@
   }
 }
 
-/*.header__item:not(.header__item--logo) {
+.header__item--close {
   display: none;
-}*/
+}
 
 .header__item--logo {
   padding: 22px 20px;
@@ -145,6 +145,7 @@
 }
 
 .header__btn {
+  display: none;
   font-size: 0;
   margin-left: 65px;
 
@@ -152,6 +153,17 @@
     display: none;
   }
 }
+
+.header__btn--open {
+  width: 24px;
+  height: 18px;
+  background: url("../img/icon-mobile-menu.svg") no-repeat;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 
 .header__btn--close {
   width: 20px;

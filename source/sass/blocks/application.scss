@@ -6,6 +6,17 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 72px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 80px;
+  }
+}
+
+.application__form {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .application__head {
@@ -21,6 +32,11 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 71px;
+    padding: 0 110px;
+  }
 }
 
 .application__paragraph {
@@ -35,6 +51,10 @@
     padding: 0 20px 0 40px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 55px 930px 0 70px;
   }
 }
 
@@ -58,6 +78,12 @@
     padding: 0 66px 0 70px;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin: 65px 40px 0 110px;
+    padding: 0;
+  }
 }
 
 .application__fild--radio {
@@ -70,11 +96,36 @@
     padding: 32px 0 0 88px;
     border: 1px solid #ededed;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin: 65px 110px 19px 40px;
+    padding: 35px 0 0 87px;
+  }
+}
+
+.application__fild--contacts {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 0 70px;
+  }
 }
 
 .application__fild--textarea {
   @media (min-width: $tablet-width) {
     padding: 0 66px 0 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 0 70px 0;
+  }
+}
+
+.application__fild--check {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 0 70px 0;
   }
 }
 
@@ -121,6 +172,22 @@
       width: 145px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 49px 90px 77px 40px;
+
+    &::before {
+      top: 72px;
+      left: -70px;
+      width: 70px;
+    }
+
+    &::after {
+      top: 72px;
+      left: 593px;
+      width: 775px;
+    }
+  }
 }
 
 .application__title--textarea {
@@ -153,6 +220,22 @@
       top: 68px;
       left: 220px;
       width: 479px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 46px 0 77px 40px;
+
+    &::before {
+      top: 69px;
+      left: -70px;
+      width: 70px;
+    }
+
+    &::after {
+      top: 69px;
+      left: 259px;
+      width: 1110px;
     }
   }
 }
@@ -189,9 +272,32 @@
       width: 445px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 61px 70px 66px 40px;
+
+    &::before {
+      top: 84px;
+      left: -70px;
+      width: 70px;
+    }
+
+    &::after {
+      top: 84px;
+      left: 292px;
+      width: 1076px;
+    }
+  }
 }
 
 .application__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.application__container--check {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -218,6 +324,10 @@
     margin-bottom: 34px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .application__item--contacts {
@@ -225,6 +335,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin: 0 40px 20px;
+    padding: 0;
   }
 }
 
@@ -237,11 +353,20 @@
     margin-bottom: 53px;
     padding-left: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 0 40px 24px;
+  }
 }
 
 .application__item--check:nth-child(2n) {
   @media (min-width: $tablet-width) {
     margin-left: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 40px 24px;
   }
 }
 
@@ -266,7 +391,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -8px;
+    top: -6px;
     left: -46px;
     width: 28px;
     height: 28px;
@@ -278,6 +403,7 @@
 
   @media (min-width: $tablet-width) {
     &::before {
+      top: -8px;
       left: -60px;
       width: 38px;
       height: 38px;
@@ -291,7 +417,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -6px;
+    top: -5px;
     left: -47px;
     width: 28px;
     height: 28px;
@@ -304,6 +430,12 @@
       left: -58px;
       width: 38px;
       height: 38px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: -9px;
     }
   }
 }
@@ -403,14 +535,14 @@
 
   &:invalid:not(:placeholder-shown) {
     background: url("../img/icon-phone-error.svg") no-repeat;
-    background-size: 17px 18px;
+    background-size: 20px 20px;
     background-position: 93% 53%;
   }
 
   &:focus,
   &:active {
     background: url("../img/icon-phone-focus.svg") no-repeat;
-    background-size: 17px 18px;
+    background-size: 20px 20px;
     background-position: 93% 53%;
   }
 
@@ -426,6 +558,19 @@
     &:focus,
     &:active {
       background-position: 97% 53%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 96% 53%;
+
+    &:invalid:not(:placeholder-shown) {
+      background-position: 96% 53%;
+    }
+
+    &:focus,
+    &:active {
+      background-position: 96% 53%;
     }
   }
 }
@@ -462,6 +607,11 @@
       line-height: 30px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 40px;
+  }
 }
 
 .application__footer {
@@ -469,6 +619,11 @@
     margin: 0 168px 0 71px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin: 0 70px;
   }
 }
 
@@ -482,6 +637,11 @@
     width: 283px;
     margin: 12px 0 0;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin: 50px 40px 0;
   }
 }
 
@@ -497,13 +657,18 @@
     align-self: center;
     font-size: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 45px 365px 0 40px;
+    padding-right: 65px;
+  }
 }
 
 .application__input--radio:checked ~ .application__label--radio {
   &::after {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 3px;
     left: -37px;
     width: 12px;
     height: 12px;

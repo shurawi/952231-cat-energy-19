@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="fonts/oswaldregular.woff2" as="font" rel="preload">
     <link href="fonts/oswaldregular.woff" as="font" rel="preload">
     <link href="fonts/oswaldmedium.woff2" as="font" rel="preload">
@@ -12,6 +12,9 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
+    <div style="display:none">
+      <include src="source/img/sprite.svg"></include>
+    </div>
     <header class="header">
       <nav class="header__nav wrap">
         <ul class="header__list">
@@ -23,15 +26,15 @@
                 <img class="header__img" src="img/logo-mobile.svg" alt="логотип Кэт Энерджи">
               </picture>
             </a>
-            <button class="header__btn header__btn--close" type="button" name="button">закрыть</button>
+            <button class="header__btn header__btn--open" type="button" name="button">закрыть</button>
           </li>
           <li class="header__item header__item--white">
             <a class="header__link header__link--active header__link--white">Главная</a>
           </li>
-          <li class="header__item">
+          <li class="header__item header__item--white">
             <a class="header__link header__link--white" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="header__item">
+          <li class="header__item header__item--white">
             <a class="header__link header__link--white" href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -145,7 +148,7 @@
             <div class="example__buttons">
               <button class="example__btn example__btn--before" type="button" name="button">Было</button>
               <div class="example__control">
-                <input class="example__input" type="range" name="" value="" step="any">
+                <input class="example__input" type="range" name="range" step="any">
               </div>
               <button class="example__btn example__btn--after" type="button" name="button">Стало</button>
             </div>
@@ -163,13 +166,12 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Наш положение на карте: ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</h2>
-        <div class="map__wrap wrap">
-          <img class="map__img" src="img/map-pin.png" width="55" height="53" alt="маркер на карте">
-        </div>
+        <iframe title="мы на яндекс картах" class="map__iframe" src="https://yandex.ru/map-widget/v1/-/C8vZqQ7t" width="512" height="345"></iframe>
       </section>
     </main>
     <footer>
       <section class="info">
+        <h2 class="info__head visually-hidden">Мы в соц сетях</h2>
         <div class="info__wrap wrap">
           <ul class="info__list">
             <li class="info__item info__item--logo">
@@ -181,17 +183,17 @@
               <ul class="social__list">
                 <li class="social__item social__item--vk">
                   <a class="social__link social__link--vk" href="#">
-                    <svg class="social__svg social__svg--vk" width="22" height="12"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+                    <svg class="social__svg social__svg--vk" width="22" height="12"><use xlink:href="#icon-vk"></use></svg>
                   </a>
                 </li>
                 <li class="social__item">
                   <a class="social__link social__link--inst" href="#">
-                    <svg class="social__svg social__svg--inst" width="16" height="16"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+                    <svg class="social__svg social__svg--inst" width="16" height="16"><use xlink:href="#icon-insta"></use></svg>
                   </a>
                 </li>
                 <li class="social__item">
                   <a class="social__link social__link--fb" href="#">
-                    <svg class="social__svg social__svg--fb" width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+                    <svg class="social__svg social__svg--fb" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
                   </a>
                 </li>
               </ul>
@@ -199,12 +201,13 @@
             <li class="info__item info__item--academy">
               <p class="info__span">HTML Academy</p>
               <a class="info__link info__link--academy" href="https://htmlacademy.ru/intensive/adaptive">
-                <svg class="info__svg info__svg--academy" width="27" height="34"><use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use></svg>
+                <svg class="info__svg info__svg--academy" width="27" height="34"><use xlink:href="#icon-logo-htmlacademy"></use></svg>
               </a>
             </li>
           </ul>
         </div>
       </section>
+      <script async src="js/picturefill.js"></script>
     </footer>
   </body>
 </html>
