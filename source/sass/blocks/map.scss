@@ -1,16 +1,27 @@
 @import "variables.scss";
 
 .map {
-  min-width: 320px;
+  width: 320px;
   height: 360px;
   background: url("../img/bg-map-mobile@1x.png") no-repeat;
   background-position: 0 -40px;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-map-mobile@2x.jpg") no-repeat;
+    background-size: 100%;
+  }
+
   @media (min-width: $tablet-width) {
-    min-width: 768px;
+    width: 768px;
     height: 396px;
     background: url("../img/bg-map-tablet@1x.png") no-repeat;
     background-position: 0 -4px;
+    background-size: 100%;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: $retina-dpi), (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+    background: url("../img/bg-map-tablet@2x.jpg") no-repeat;
+    background-size: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,7 +29,12 @@
     height: 400px;
     margin-top: -201px;
     background: url("../img/bg-map-desktop@1x.png") no-repeat;
-    background-position: 0 5px;
+    background-size: 100%;
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+    background: url("../img/bg-map-desktop@2x.png") no-repeat;
+    background-size: 100%;
   }
 }
 
