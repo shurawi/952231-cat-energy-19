@@ -2,7 +2,7 @@
 
 .categorys__wrap {
   @media (min-width: $desktop-width) {
-    padding: 80px 70px 71px;
+    padding: 80px 70px 43px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -21,7 +21,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin: 0 40px;
+    margin: 0 40px 28px;
     padding: 75px 0 0 53px;
   }
 }
