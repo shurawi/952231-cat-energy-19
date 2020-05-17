@@ -51,7 +51,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 75px 0 80px 109px;
+    margin: 75px 0 80px 39px;
 
     &::before {
       width: 70px;
@@ -59,14 +59,14 @@
     }
 
     &::after {
-      width: 958px;
+      width: 888px;
     }
   }
 }
 
 .goods__cover {
   @media (min-width: $desktop-width) {
-    margin: 0 70px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
   }
@@ -156,6 +156,7 @@
   font-size: 14px;
   line-height: 14px;
   font-family: "Arials", sans-serif;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     margin: 17px 0 11px;
@@ -254,7 +255,7 @@
   }
 }
 
-.googs__svg {
+.goods__svg {
   width: 55px;
   height: 60px;
   margin: 64px 0 57px 113px;

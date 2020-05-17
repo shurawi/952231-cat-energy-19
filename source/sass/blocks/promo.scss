@@ -3,7 +3,15 @@
 .promo {
   @media (min-width: $desktop-width) {
     margin-top: -117px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(104, 183, 56, 0.6) 50%, rgba(99, 167, 58, 1) 100%);
+    padding-bottom: 271px;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat, linear-gradient(to right, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(99, 167, 58, 1) 50%);
+    background-position: 113% 0, center;
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+    background: url("../img/index-background-desktop@2x.jpg") no-repeat,  linear-gradient(to right, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(99, 167, 58, 1) 50%);
+    background-size: 55%, 100%;
+    background-position: 113% 0, center;
   }
 }
 
@@ -20,17 +28,17 @@
     background: none;
   }
 
-  @media (min-width: $desktop-width) {
+  /*@media (min-width: $desktop-width) {
     padding-bottom: 273px;
     background: url("../img/index-background-desktop@1x.jpg") no-repeat;
-    background-position: 100% 0;
+    background-position: 650px 0;
   }
 
   @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
     background: url("../img/index-background-desktop@2x.jpg") no-repeat;
-    background-size: 50%;
-    background-position: 100% 0;
-  }
+    background-size: 55%;
+    background-position: 650px 0;
+  }*/
 }
 
 .promo__text {
@@ -42,7 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    margin: 0 40px;
     padding: 222px 600px 0 81px;
   }
 }
@@ -103,7 +111,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 141px;
-    left: 559px;
+    left: 489px;
     width: 552px;
     height: 499px;
   }
@@ -125,6 +133,6 @@
 
   @media (min-width: $desktop-width) {
     top: 444px;
-    left: 189px;
+    left: 119px;
   }
 }

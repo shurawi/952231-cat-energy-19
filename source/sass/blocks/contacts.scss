@@ -66,9 +66,10 @@
   }
 }
 
-.content__paragraph {
+.contacts__paragraph {
   margin: 0;
   padding: 0;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;

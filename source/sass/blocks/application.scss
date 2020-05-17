@@ -35,7 +35,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 71px;
-    padding: 0 110px;
+    padding: 0 40px;
   }
 }
 
@@ -54,7 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 55px 930px 0 70px;
+    margin: 55px 900px 0 0;
   }
 }
 
@@ -81,7 +81,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin: 65px 40px 0 110px;
+    margin: 65px 40px 0 40px;
     padding: 0;
   }
 }
@@ -99,7 +99,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin: 65px 110px 19px 40px;
+    margin: 65px 40px 19px 40px;
     padding: 35px 0 0 87px;
   }
 }
@@ -107,7 +107,7 @@
 .application__fild--contacts {
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding: 0 70px;
+    padding: 0;
   }
 }
 
@@ -118,14 +118,14 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding: 0 70px 0;
+    padding: 0;
   }
 }
 
 .application__fild--check {
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding: 0 70px 0;
+    padding: 0;
   }
 }
 
@@ -450,6 +450,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   border: 1px solid #e6e6e6;
+  color: #444444;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -623,7 +624,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin: 0 70px;
+    margin: 0;
   }
 }
 
@@ -651,6 +652,7 @@
   font-size: 14px;
   line-height: 16px;
   font-family: "Arials", sans-serif;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     margin: 5px 5px 0 0;
