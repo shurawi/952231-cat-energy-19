@@ -27,18 +27,6 @@
     position: relative;
     background: none;
   }
-
-  /*@media (min-width: $desktop-width) {
-    padding-bottom: 273px;
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat;
-    background-position: 650px 0;
-  }
-
-  @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
-    background: url("../img/index-background-desktop@2x.jpg") no-repeat;
-    background-size: 55%;
-    background-position: 650px 0;
-  }*/
 }
 
 .promo__text {
@@ -67,7 +55,7 @@
     line-height: 60px;
     font-weight: normal;
     text-align: left;
-    color: #000000;
+    color: #111111;
   }
 }
 
@@ -84,7 +72,7 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    color: #000000;
+    color: #111111;
   }
 }
 

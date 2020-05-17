@@ -67,18 +67,20 @@
   font-family: "Oswald medium", "Arial", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: #111111;
   outline: none;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 25px;
     font-family: "Oswald", "Arial", sans-serif;
+    color: #222222;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 25px;
+    color: #111111;
   }
 }
 
