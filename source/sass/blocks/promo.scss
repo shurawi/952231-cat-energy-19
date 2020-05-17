@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
-    background: url("../img/index-background-desktop@2x.jpg") no-repeat,  linear-gradient(to right, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(99, 167, 58, 1) 50%);
+    background: url("../img/index-background-desktop@2x.jpg") no-repeat, linear-gradient(to right, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(99, 167, 58, 1) 50%);
     background-size: 55%, 100%;
     background-position: 113% 0, center;
   }
