@@ -452,17 +452,18 @@
   text-transform: uppercase;
   border: 1px solid #e6e6e6;
   color: #444444;
+  outline: none;
 
   &:hover {
     border: 1px solid #cdcdcd;
   }
 
   &:invalid:not(:placeholder-shown) {
-    border: 1px solid #ff8282;
+    border: 2px solid #ff8282;
   }
 
   &:focus {
-    border: 1px solid #000000;
+    border: 2px solid #000000;
   }
 
   @media (min-width: $tablet-width) {
