@@ -132,6 +132,10 @@
   }
 }
 
+.header__item--mobile {
+  display: none;
+}
+
 .header__img {
   width: 190px;
   height: 38px;
@@ -148,7 +152,6 @@
 }
 
 .header__btn {
-  display: none;
   font-size: 0;
   margin-left: 65px;
 
