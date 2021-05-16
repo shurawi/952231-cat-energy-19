@@ -28,15 +28,17 @@
             </a>
             <button class="header__btn header__btn--close" type="button" name="button">закрыть</button>
           </li>
-          <li class="header__item">
-            <a class="header__link" href="index.html">Главная</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link header__link--active">Подбор программы</a>
-          </li>
+          <ul class="header__list header__list--menu">
+            <li class="header__item">
+              <a class="header__link" href="index.html">Главная</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link--active">Подбор программы</a>
+            </li>
+          </ul>
         </ul>
       </nav>
     </header>
@@ -95,7 +97,7 @@
               <legend class="application__title application__title--check">Дополнительно</legend>
               <div class="application__container application__container--check">
                 <div class="application__item application__item--check">
-                  <input class="application__input application__input--check" type="checkbox" name="application" id="sweetener" checked="">
+                  <input class="application__input application__input--check" type="checkbox" name="application" id="sweetener" checked>
                   <label class="application__label application__label--check" for="sweetener">Сахарозаменитель</label>
                 </div>
                 <div class="application__item application__item--check">
@@ -173,5 +175,6 @@
       </section>
     </footer>
     <script async src="js/picturefill.js"></script>
+    <script async src="js/main.js"></script>
   </body>
 </html>

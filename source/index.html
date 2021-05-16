@@ -17,7 +17,7 @@
     </div>
     <header class="header">
       <nav class="header__nav wrap">
-        <ul class="header__list">
+        <ul class="header__list header__list--logo">
           <li class="header__item header__item--logo">
             <a class="header__link header__link--logo" href="index.html">
               <picture>
@@ -26,17 +26,19 @@
                 <img class="header__img" src="img/logo-mobile.svg" alt="логотип Кэт Энерджи">
               </picture>
             </a>
-            <button class="header__btn header__btn--close" type="button" name="button">закрыть</button>
+            <button class="header__btn header__btn--open" type="button" name="button">закрыть</button>
           </li>
-          <li class="header__item header__item--white">
-            <a class="header__link header__link--active header__link--white">Главная</a>
-          </li>
-          <li class="header__item header__item--white">
-            <a class="header__link header__link--white" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="header__item header__item--white">
-            <a class="header__link header__link--white" href="form.html">Подбор программы</a>
-          </li>
+          <ul class="header__list header__list--menu">
+            <li class="header__item header__item--white header__item--mobile">
+              <a class="header__link header__link--active header__link--white">Главная</a>
+            </li>
+            <li class="header__item header__item--white header__item--mobile">
+              <a class="header__link header__link--white" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="header__item header__item--white header__item--mobile">
+              <a class="header__link header__link--white" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
         </ul>
       </nav>
     </header>
@@ -139,13 +141,26 @@
                 <img class="example__img example__img--after example__img--hidden" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="">
               </picture>
             </div>
-            <div class="example__buttons">
+            <!--<div class="example__buttons">
               <button class="example__btn example__btn--before" type="button" name="button">Было</button>
               <div class="example__control">
                 <input class="example__input" type="range" name="range" step="any">
               </div>
               <button class="example__btn example__btn--after" type="button" name="button">Стало</button>
-            </div>
+            </div>-->
+            <form class="example__form" action="index.html" method="post">
+              <div class="example__point example__point--before">
+                <input class="example__radio example__radio--before" type="radio" name="example" id="before" checked>
+                <label class="example__label example__label--before" for="before">Было</label>
+              </div>
+              <div class="example__control">
+                <input class="example__input" type="range" name="range" step="any">
+              </div>
+              <div class="example__point example__point--after">
+                <input class="example__radio" type="radio" name="example" id="after">
+                <label class="example__label example__label--after" for="after">Стало</label>
+              </div>
+            </form>
           </div>
         </div>
       </section>
